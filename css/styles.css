@@ -114,88 +114,147 @@ table {
 
 html {
 	box-sizing: border-box;
+	font-family: 'Kumbh Sans', sans-serif;
 }
 
 body {
 	background-color: hsl(185, 75%, 39%);
-	background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-top.svg');
+	background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+	background-position: bottom 40vh right 45vw, top 55vh left 38vw;
 	background-repeat: no-repeat;
-	background-size: cover;
 	background-attachment: fixed;
-	background-position: top -15rem left -20rem, bottom -15rem right -20rem;
+	background-size: cover;
 }
 
 .main-container {
-	width: 20rem;
-	background-color: white;
-	border-radius: 1rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 10%;
-	margin-left: 30%;
+}
+
+.container {
+	width: 84%;
+	max-width: 21.875em;
+	background-color: white;
+	border-radius: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 11em;
+}
+
+.profile-image-container {
+	width: 6.5em;
+	height: 6.5em;
+	border-radius: 50%;
+	text-align: center;
+	position: absolute;
+	top: 17em;
+	background-color: white;
+}
+
+.profile-image-container img {
+	width: 90%;
+	margin-top: .3em;
+	margin-left: .05em;
+	border-radius: 50%;
+}
+
+.personal-stats {
+	width: 100%;
+	margin-top: 5em;
+	margin-bottom: 1.5em;
+	text-align: center;
+}
+
+.personal-stats h1 {
+	color: hsl(229, 23%, 23%);
+	font-weight: 700;
+	font-size: 1.125rem;
+}
+
+.personal-stats p {
+	color: hsl(227, 10%, 46%);
+	font-weight: 400;
+	margin-top: .8em;
+}
+
+.age {
+	color: hsl(227, 10%, 46%);
+	font-weight: 400;
+	margin-left: .3em;
+}
+
+.profile-stats-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border-top: 0.0625em solid hsl(0, 12%, 86%);
+	text-align: center;
+}
+
+.followers p {
+	font-size: .9rem;
+	margin-top: .5em;
+}
+
+.likes p {
+	font-size: .9rem;
+	margin-top: .5em;
+}
+
+.photos p {
+	font-size: .9rem;
+	margin-top: .5em;
+}
+
+.followers h2 {
+	font-size: 1.125rem;
+}
+
+.likes h2 {
+	font-size: 1.125rem;
+}
+
+.photos h2 {
+	font-size: 1.125rem;
+}
+
+.followers,
+.likes,
+.photos {
+	padding: 1.5em 0;
+}
+
+.profile-stats-container h2 {
+	color: hsl(229, 23%, 23%);
+	font-weight: 700;
+}
+
+.profile-stats-container p {
+	color: hsl(227, 10%, 46%);
+	font-weight: 400;
+}
+
+.bg-card {
+	width: 100%;
 }
 
 .bg-card img {
 	width: 100%;
-	border-top-right-radius: 1rem;
-	border-top-left-radius: 1rem;
+	border-top-right-radius: 1em;
+	border-top-left-radius: 1em;
 }
 
 .attribution {
-	font-size: 11px;
+	font-size: 0.6875rem;
+	margin-top: 1em;
 	text-align: center;
-	position: absolute;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
-}
-
-@media (min-width: 400px) {
-	body {
-		background-position: top -25rem left -20rem, bottom -25rem right -20rem;
-	}
-}
-
-@media (min-width: 700px) {
-	body {
-		background-position: top -25rem left -20rem, bottom -25rem right -20rem;
-	}
-}
-
-@media (min-width: 800px) {
-	body {
-		background-position: top -30rem left -25rem, bottom -30rem right -25rem;
-	}
-}
-
-@media (min-width: 900px) {
-	body {
-		background-position: top -35rem left -30rem, bottom -40rem right -28rem;
-	}
-}
-
-@media (min-width: 1000px) {
-	body {
-		background-position: top -40rem left -35rem, bottom -45rem right -30rem;
-	}
-}
-
-@media (min-width: 1200px) {
-	body {
-		background-position: top -45rem left -40rem, bottom -50rem right -35rem;
-	}
-}
-
-@media (min-width: 1300px) {
-	body {
-		background-position: top -50rem left -45rem, bottom -55rem right -40rem;
-	}
-}
-
-@media (min-width: 1326px) {
-	body {
-		background-position: top -55rem left -40rem, bottom -65rem right -38rem;
-	}
+	text-decoration: none;
 }
