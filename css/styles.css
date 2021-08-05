@@ -258,3 +258,33 @@ body {
 	color: hsl(228, 45%, 44%);
 	text-decoration: none;
 }
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
+	.profile-image-container {
+		top: 16em;
+	}
+}
+
+@media only screen and (device-width: 812px) and (device-height: 375px) and (orientation: landscape) {
+	.container {
+		height: 88vh;
+		margin-top: 1.4em;
+	}
+	.profile-image-container {
+		top: 5.8em;
+	}
+	.followers,
+	.likes,
+	.photos {
+		padding-top: 0.9em;
+	}
+}
+
+@media only screen and (device-width: 768px) and (device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+	.container {
+		margin-top: 22em;
+	}
+	.profile-image-container {
+		top: 28em;
+	}
+}
