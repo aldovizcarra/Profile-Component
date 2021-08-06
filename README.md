@@ -31,8 +31,8 @@ Profile Card
 
 ### Links
 
-- Solution URL: [https://github.com/aldovizcarra/Profile-Component]
-- Live Site URL: [https://aldovizcarra.github.io/Profile-Component/]
+- Solution URL: [Github](https://github.com/aldovizcarra/Profile-Component)
+- Live Site URL: [Live Site](https://aldovizcarra.github.io/Profile-Component/)
 
 ## My process
 
