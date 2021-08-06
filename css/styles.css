@@ -265,7 +265,7 @@ body {
 	}
 }
 
-@media only screen and (device-width: 812px) and (device-height: 375px) and (orientation: landscape) {
+@media only screen and (device-width: 635px) and (device-height: 375px) and (orientation: landscape) {
 	.container {
 		height: 88vh;
 		margin-top: 0;
